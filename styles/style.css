@@ -6,7 +6,6 @@ body {
     background-color: #A3B7CD;
 }
 header {
-
     background-color: rgba(94, 115, 62, 0.5); /*#5E733E*/
     display: grid;
     grid-template-columns: 120px auto;
@@ -38,13 +37,13 @@ nav {
 nav a {
     padding: 10px 35px;
     border-style: solid;
-    border-color: #6F7364;
+    border-color: #7F9BC5;
     border-width: 3px;
     border-radius: 10px;
     height: 50%;
     text-align: center;
     color: white;
-    box-shadow: 5px 5px 15px #6F7364;
+    box-shadow: 5px 5px 15px #7F9BC5;
     background-color: #586A5F;
     text-decoration: none;
 }
@@ -53,6 +52,9 @@ nav a:hover {
     color: black;
     text-decoration: none;
 }
+
+
+
 #hero {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -70,13 +72,26 @@ nav a:hover {
     grid-column: 2/5;
     grid-row: 1/2;
     margin-top: 100px;
+    justify-self: center;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
     color: white;
+    background-color: #7F9BC5;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #7F9BC5;
+}
+#hero-msg h1 {
+    width: 300px;
+}
+#hero-msg h4 {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 200px;
 }
 .home-title {
     color: #586A5F;
+    font-size: 30px;
 }
 .button-box {
     padding: 125px;
@@ -94,6 +109,36 @@ nav a:hover {
     background-color: #7F9BC5;
     color: white;
 }
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -100px;
+}
+.banner-box {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    z-index: -1;
+}
+#river-banner-img {
+    width: 100%;
+}
+#river-banner-msg {
+    padding: 0 -10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    font-size: 30px;
+}
+#river-banner-msg h1{
+    /*line-height: 0.3em;*/
+    margin-top: -30px;
+}
+#river-banner-msg h4{
+    /*line-height: 0.3em;*/
+    font-size: 25px;
+}
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -106,11 +151,13 @@ main section {
     border: 10px solid #5E733E;
     border-radius: 10px;
     transition: transform 0.5s;
-    box-shadow: 5px 5px 10px #6F7364;
+    box-shadow: 5px 5px 10px #5E733E;
 }
 .card-img:hover {
-    opacity: 0.6;
-    transform: scale(1.1);
+    opacity: 0.75;
+    transform: scale(1.2);
+    border: 8px solid #C6D2D6;
+    box-shadow: 5px 5px 10px #C6D2D6;
 }
 .rivers-card {
     grid-column: 2/4;
@@ -126,6 +173,10 @@ main section {
 }
 .icon {
     width: 80px;
+}
+#river-side {
+    grid-column: 1/3;
+    width: 100%;
 }
 #background {
     height: 725px;
@@ -176,7 +227,7 @@ footer p a:hover {
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
     .button-box {
         padding: 10px;
     }
@@ -190,7 +241,7 @@ footer p a:hover {
     header {
         height: auto;
     }
-    #hero, .home-grid {
+    #hero, .home-grid, .banner {
         display: block;
         height: auto;
     }
@@ -201,16 +252,30 @@ footer p a:hover {
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero, .banner {
         margin-top: 0;
     }
     #hero-msg {
         margin-top: 0;
     }
+    #hero-msg h1 {
+        margin: auto;
+    }
     #hero-msg h4 {
         display: none;
     }
+    #river-banner-msg {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #5E733E;
+        opacity: 0.8;
+        border: solid;
+        border-color: #586A5F;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px #586A5F;
+    }
     .button-box {
+        margin-top: 10px;
         padding: 10px;
     }
     .home-title {
