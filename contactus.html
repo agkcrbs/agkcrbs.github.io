@@ -25,37 +25,39 @@
 
             <div class="banner">
                 <div class="banner-box">
-                    <img id="river-banner-img" src="images/forest.jpg" alt="A forest">
+                    <img id="contact-banner-img" src="images/mountain-road.jpg" alt="A forest">
                 </div>
-                <section id="river-banner-msg">
-                    <h4>Get to Know Our</h4>
-                    <h1>Rivers</h1>
+                <section id="contact-banner-msg">
+                    <h4>Thank you for your</h4>
+                    <h1>Feedback</h1>
                 </section>
             </div>
 
             <main>
-                <div id="feedback">
-                    <form action="/my-handling-form-page" method="post">
-                        <ul>
-                            <li>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="user_name" />
-                            </li>
-                            <li>
-                            <label for="mail">E-mail:</label>
-                            <input type="email" id="mail" name="user_email" />
-                            </li>
-                            <li>
-                            <label for="msg">Message:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                            </li>
-                        </ul>
-                    </form>
+                <div id="feedback-holder">
+                    <div id="feedback">
+                        <form action="/my-handling-form-page" method="post">
+                            <ul>
+                                <li>
+                                <label id="left-flex" for="form-name">Name:</label>
+                                <input type="text" id="form-name" name="user_name" />
+                                </li>
+                                <li>
+                                <label id="left-flex" for="form-mail">E-mail:</label>
+                                <input type="email" id="form-mail" name="user_email" />
+                                </li>
+                                <li>
+                                <label id="left-flex" for="form-msg">Message:</label>
+                                <textarea id="form-msg" name="user_message"></textarea>
+                                </li>
+                            </ul>
+                        </form>                    
+                    </div>
                 </div>
             </main>
 
             <footer>
-                <p>Dry Oar &copy; 2022 - Steven Foster</p>
+                <p>Wet Water Rafting &copy; 2022 - Steven Foster</p>
                 <p><a href="site-plan-rafting.html">Site Plan</a></p>
                 <p><a href="contactus.html">Contact Us</a></p>
                 <div class="social">
