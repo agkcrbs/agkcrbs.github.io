@@ -60,6 +60,42 @@ hr {
   margin: 35px 0;
   background: var(--accent1-color);
 }
+
+#site-logo-box{
+  width: 10%;
+  margin: -50px auto;
+}
+.site-logo {
+  width: 100px;
+  height: 90px;
+  justify-self: center;
+  align-self: center;
+}
+.site-logo :hover {
+  background-image: url("images/logo2.png");
+  width: 100px;
+  height: 90px;
+}
+
+/* #site-nav {
+  padding: 10px 35px;
+  border-style: solid;
+  border-color: #7F9BC5;
+  border-width: 3px;
+  border-radius: 10px;
+  height: 50%;
+  text-align: center;
+  color: white;
+  box-shadow: 5px 5px 15px #7F9BC5;
+  background-color: #586A5F;
+  text-decoration: none;
+} */
+/* #site-nav:hover {
+  background-color: #7F9BC5;
+  color: black;
+  text-decoration: none;
+} */
+
 header {
   padding: 1em;
   text-align: center;
