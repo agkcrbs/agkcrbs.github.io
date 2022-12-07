@@ -1,5 +1,5 @@
 #content {
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 10px auto;
 }
 body {
@@ -21,11 +21,11 @@ header {
     justify-self: center;
     align-self: center;
 }
-/*.logo :hover {
+.logo :hover {
     background-image: url("images/logo2.png");
     width: 100px;
     height: 90px;
-}*/
+}
 nav {
 /*    border-style: solid;
     border-color: white;*/
@@ -52,7 +52,6 @@ nav a:hover {
     color: black;
     text-decoration: none;
 }
-
 
 
 #hero {
@@ -119,23 +118,23 @@ nav a:hover {
     grid-row: 1/4;
     z-index: -1;
 }
-#river-banner-img {
+#river-banner-img, #contact-banner-img {
     width: 100%;
 }
-#river-banner-msg {
+#river-banner-msg, #contact-banner-msg {
     padding: 0 -10px;
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
     color: white;
-    margin-top: 100px;
+    margin-top: 80px;
     font-size: 30px;
 }
-#river-banner-msg h1{
+#river-banner-msg h1, #contact-banner-msg h1 {
     /*line-height: 0.3em;*/
     margin-top: -30px;
 }
-#river-banner-msg h4{
+#river-banner-msg h4, #contact-banner-msg h4 {
     /*line-height: 0.3em;*/
     font-size: 25px;
 }
@@ -174,10 +173,43 @@ main section {
 .icon {
     width: 80px;
 }
-#river-side {
-    grid-column: 1/3;
-    width: 100%;
+#river-main {
+    grid-column: 1/10;
+    margin-top: -50px;
 }
+#river-side {
+    /* grid-column: 1/2; */
+    width: 100%;
+    height: 3%;
+    margin-top: -50px;
+    margin-left: 20px;
+    transition: 1.5s;
+    opacity: 0;
+    /* border: solid; */
+    display: inline;
+}
+#river-info {
+    margin-left: 350px;
+    margin-right: 20px;
+    margin-top: -950px;
+    margin-bottom: 200px;
+    grid-column: 4/10;
+    /* position: absolute; */
+}
+#river-info p {
+    text-align: justify;
+    margin-right: -100px;
+}
+#river-img-right {
+    float: right;
+    padding-left: 15px;
+    margin-right: -100px;
+}
+#river-img-left {
+    float: left;
+    padding-right: 15px;
+}
+
 #background {
     height: 725px;
     background-color: #586A5F;
@@ -206,16 +238,30 @@ main section {
     color: black;
 }
 
+#feedback-holder{
+    position: relative;
+    width: 75%;
+    margin: auto;
+    margin-top: -20px;
+    top: -20px;
+}
 #feedback {
-    background-color: antiquewhite;
-    position: absolute;
+    background-color: #C6D2D6;
     top: 0;
     left: 0;
     right: 0;
     padding: .5em;
     /* make this element invisible until we are ready for it */
-    display: none;      
+    display: grid;
+    grid-template-columns: 30% auto;
+    justify-content: center;
 }
+/* #left-flex {
+    display: block;
+}
+#form-name, #form-mail, #form-msg {
+    display: block;
+} */
 .moveDown {
     margin-top: 3em;
 }
@@ -279,9 +325,10 @@ footer p a:hover {
     #hero-msg h4 {
         display: none;
     }
-    #river-banner-msg {
+    #river-banner-msg, #contact-banner-msg {
         width: 50%;
         margin: 0 auto;
+        margin-bottom: 50px;
         background-color: #5E733E;
         opacity: 0.8;
         border: solid;
@@ -309,7 +356,30 @@ footer p a:hover {
         display: block;
         margin: 0 auto;
     }
+    #river-side {
+        /* position: relative;
+        padding-top: 50px; */
+        display: none;
+    }
+    #river-info {
+        background-color: #586A5F;
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 200px;
+        padding: 20px;
+        padding-right: 120px;
+        position: absolute;
+    }
+    #river-img-right, #river-img-left {
+        height: 100px;
+    }
+    #feedback {
+        top: 0;
+    }
     footer {
-        margin-top: 25px;
+        margin-top: 1240px;
+        position: absolute;
+        width: 100%;
     }
 }
