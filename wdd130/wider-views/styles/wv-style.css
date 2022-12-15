@@ -64,6 +64,7 @@ nav a {
 }
 #nav-link1 {
     margin-left: 28%;
+    height: 70px;
 }
 #nav-link2 {
     margin: 0 5%;
@@ -71,6 +72,7 @@ nav a {
 }
 #nav-link3 {
     margin-right: 28%;
+    height: 70px;
 }
 .nav-btn {
     height: 46px;
@@ -313,7 +315,7 @@ main {
     border-radius: 80px;
     display: none;
 }
-.name {
+.name1 {
     width: 70%;
     margin: -15% 18% -5% 12%;
     position: relative;
@@ -323,9 +325,40 @@ main {
     border-width: 2px;
     background-color: #BCB6FF;
 }
-.name:hover {
+.name1:hover {
     background-color: #94958B;
     border-color: #BCB6FF;
+    border-color: red;
+}
+.name2 {
+    width: 70%;
+    margin: -15% 18% -5% 12%;
+    position: relative;
+    padding: 5px;
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    background-color: #BCB6FF;
+}
+.name2:hover {
+    background-color: #94958B;
+    border-color: #BCB6FF;
+    border-color: blue;
+}
+.name3 {
+    width: 70%;
+    margin: -15% 18% -5% 12%;
+    position: relative;
+    padding: 5px;
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    background-color: #BCB6FF;
+}
+.name3:hover {
+    background-color: #94958B;
+    border-color: #BCB6FF;
+    border-color: white;
 }
 .profile {
     width: 95%;
@@ -346,15 +379,6 @@ main {
 }
 .prof-link:hover {
     color: #003E1F;
-}
-#red:hover {
-    border-color: red;
-}
-#blue:hover {
-    border-color: blue;
-}
-#white:hover {
-    border-color: white;
 }
 
 footer {
