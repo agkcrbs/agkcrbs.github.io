@@ -366,9 +366,9 @@ footer {
     height: 40px;
     display: inline;
 }
-.social {
-    display: relative;
-}
+/*.social {
+    position: relative;
+}*/
 #icon {
     width: 20px;
 }
