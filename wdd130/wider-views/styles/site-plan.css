@@ -33,6 +33,12 @@ Fonts are separated by a | */
   --nav-hover-background-color: #94958B;
 }
 
+#go-home {
+  width: 20px;
+}
+.wire {
+  width: 600px;
+}
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
