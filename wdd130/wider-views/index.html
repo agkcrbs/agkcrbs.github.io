@@ -1,12 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/wv-style.css">
+        <title>Wider Views | Home</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo-box">
+                <a href="index.html"><img id="logo" src="images/wv_5_sh.png" alt="Wider Views logo"></a>
+                <!-- <a href="index.html"><img id="logo" src="images/wv_5_sh.png" 
+                    alt="Wider Views logo" onmouseover="this.src='images/wv_5_sh.png';"
+                    onmouseout="this.src='images/wv_5_sh.png';"></a> -->
+            </div>
+            <nav>
+                <a id="nav-link1" href="real.html">
+                    <div class="nav-btn" id="nav-btn1">
+                        <div class="btn-inner" id="btn-inner1">
+                            <b>Realistic</b>
+                        </div>
+                    </div>
+                </a>
+                <a id="nav-link2" href="deep.html">
+                    <div class="nav-btn" id="nav-btn2">
+                        <div class="btn-inner" id="btn-inner2">
+                            <b>Profound</b>
+                        </div>
+                    </div>
+                </a>
+                <a id="nav-link3" href="ideal.html">
+                    <div class="nav-btn" id="nav-btn3">
+                        <div class="btn-inner" id="btn-inner3">
+                            <b>Idealistic</b>
+                        </div>
+                    </div>
+                </a>
+            </nav>
+        </header>
+
+        <main>
+            <div id="top-bkg">
+                <img id="top-img" src="images/earth1.png" alt="earth from space">
+            </div>
+            <div class="main-scr" id="main-scr1">
+                <p class="main-p" id="p-left">Why all the terrible news?</p>
+            </div>
+            <div class="main-scr" id="main-scr2">
+                <p class="main-p" id="p-ctr-left">Why the ugliness?</p>
+            </div>
+            <div class="main-scr" id="main-scr3">
+                <p class="main-p" id="p-ctr-right">Whom does it benefit?</p>
+            </div>
+            <div class="main-scr" id="main-scr4">
+                <p class="main-p" id="p-right">Find out this, and more.</p>
+            </div>
+            <div class="main-scr" id="main-scr5">
+                <p class="p-ctr">Welcome to Wider Views, where information-starved news consumers like you can stretch beyond the straitjackets of traditional corporate programming.
+                This site tries to offer a diverse diet of viewpoints, but one thing it happily omits
+                is the craving for chaos, conflict, and contempt you will find from mainstream sources.</p>
+                <p class="p-ctr">Explore the personalities below, and enjoy your visit.</p>
+            </div>
+
+            <div class="main-scr" id="main-scr6">
+                <div id="pic-box">
+
+                    <a class="pic-link1" href="real.html">
+                        <img class="pic" src="images/Douglas_Macgregor.jpg" alt="">
+                    </a>
+                    <a class="pic-link1" href="real.html">
+                        <img class="pic" src="images/Scott_Ritter.jpg" alt="">
+                    </a>
+                    <a class="pic-link2" href="deep.html">
+                        <img class="pic" src="images/Jordan_Peterson.jpg" alt="">
+                    </a>
+                    <a class="pic-link2" href="deep.html">
+                        <img class="pic" src="images/Lex_Fridman.png" alt="">
+                    </a>
+                    <a class="pic-link3" href="ideal.html">
+                        <img class="pic" src="images/Aaron_Maté.png" alt="">
+                    </a>
+                    <a class="pic-link3" href="ideal.html">
+                        <img class="pic" src="images/Russell_Brand.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slideshow container 
+            <div class="slideshow-container">-->
+
+                <!-- Full-width images with number and caption text 
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/Douglas_Macgregor.jpg">
+                <div class="text">Caption Text</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/Scott_Ritter.jpg">
+                <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="imgages/Russell_Brand.jpg">
+                <div class="text">Caption Three</div>
+                </div>-->
+            
+                <!-- Next and previous buttons 
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>-->
+            
+            <!-- The dots/circles 
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                // Next/previous controls
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+                </script> -->
+
+        </main>
+
+        <footer>
+            <p>Wider Views &copy; 2022 - Steven Foster
+                <a href="site-plan.html">
+                    <img id="icon" src="images/yyc.png" alt="icon">
+                    Site Plan
+                </a>
+            </p>
+            <!--<div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>-->
+        </footer>
+
+    </body>
 </html>
